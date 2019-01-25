@@ -37,5 +37,14 @@ and in your TIME ZONE destiny set up for you.
 
 ## 正文
 
-在雁栖湖修了一门计算机学院的课叫做Advanced Software Engineering，我是软件的门外汉，Software Engineering 对我来说完全是一种陌生的领域  
+在雁栖湖修了一门计算机学院的课Advanced Software Engineering，我是软件的门外汉，Software Engineering对我来说完全是一种陌生的领域，虽然课上很迷糊，但是也用了全新的视角来接触新的知识，对我自己来说也是非常难得和珍贵的体验。  
+
+大学时候能接触到的厉害的人大多数是Scientist，也难得有机会去接触真正的Engineer，在这个魔幻的时代，Engineering比Science也更接地气，在我看来也没有孰高孰低之分，完全是在不同的领域有自己的贡献，这门课最后的Project是用[MVC](https://en.wikipedia.org/wiki/Model–view–controller)的架构做一个[Ruby on Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails)的SaaS应用，其实这些软件开发的方式和方法在我看来也都是前所未有的陌生，但是好奇心驱使我学习和了解，谈不上精通，但是也大致弄清楚了开发的架构和脉络。这门课最后的作业是交一个Ruby on Rails的应用，由于几个组员也都不是专业学计算机或者软件的，我们简单地做了个旅行博客，具体项目在[这里](https://github.com/jiadonglee/youji_blog)。
+
+后来我找到了大名鼎鼎的[Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/)，这是一个基于[Bootstrap](https://getbootstrap.com/)的模版，然后看见大学时候的学长[Mingjie's Blog](https://mingjiejian.github.io/),根据他的博客找到了[Hux](https://github.com/Huxpro/huxpro.github.io)的Project，开心地fork并且终于搭建起了属于自己的blog。
+
+---
+## 一点感想
+
+谈不上情怀和理想，每个人其实都是普通人，想大多数想相同的事情，也大多数在生活的路上，所以作为19年的开篇文章，也希望还会成为一个更想成为的自己，无论今后的路怎么选择，会无悔吧。
 
