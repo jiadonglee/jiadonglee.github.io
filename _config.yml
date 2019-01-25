@@ -3,8 +3,8 @@ title: Jiadong's Blog
 SEOTitle: 李佳东的博客 | Jordan Blog
 header-img: img/home_Stockholm.jpg
 email: jordonglee@gmail.com
-description: "关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
+description: "程序与设计，天文学研究生，艺术和技术，白日梦 | 李佳东，Tech & Mobile Lover，Astronomer，Dreamer | 这里是 @Jousdon 的个人博客."
+keyword: "Jordan，Jordan's blog，天文学，数据科学，Data Science"
 url: ""              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -71,15 +71,15 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id: 'UA-133169196-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "For the next quantum leap<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/avatar_jordan.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "Come Away With Me"
+sidebar-avatar: /img/avatar_jordan.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -101,14 +101,14 @@ page-mathjax: false
 
 
 # Friends
-friends: [
-    {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-        title: "乱序",
-        href: "http://mida.re/"
-    },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    }
+# friends: [
+#     {
+#     #     title: "Su",
+#     #     href: "http://su.gallery/"
+#     # },{
+#         title: "乱序",
+#         href: "http://mida.re/"
+#     },{
+#         title: "前端外刊评论",
+#         href: "http://qianduan.guru/"
+#     },

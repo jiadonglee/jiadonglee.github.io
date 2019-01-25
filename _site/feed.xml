@@ -2,12 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jiadong's Blog</title>
-    <description>关于程序与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
+    <description>程序与设计，天文学研究生，艺术和技术，白日梦 | 李佳东，Tech &amp; Mobile Lover，Astronomer，Dreamer | 这里是 @Jousdon 的个人博客.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 24 Jan 2019 17:38:39 +0800</pubDate>
-    <lastBuildDate>Thu, 24 Jan 2019 17:38:39 +0800</lastBuildDate>
+    <pubDate>Fri, 25 Jan 2019 13:53:05 +0800</pubDate>
+    <lastBuildDate>Fri, 25 Jan 2019 13:53:05 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Hello 2019</title>
+        <description>&lt;h2 id=&quot;before-2019&quot;&gt;Before 2019&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;New York is 3 hours ahead of California,&lt;br /&gt;
+but it doesn’t make California slow.&lt;br /&gt;
+Someone graduated at the age of 22,&lt;br /&gt;
+but waited 5 years before securing a good job.&lt;br /&gt;
+Someone became a CEO at 25,&lt;br /&gt;
+and died at 50.&lt;br /&gt;
+While another became a CEO at 50,&lt;br /&gt;
+and lived to 90 years.&lt;br /&gt;
+Someone is still single,&lt;br /&gt;
+while someone else got mariied.&lt;br /&gt;
+Obama retires at 55,&lt;br /&gt;
+but DTrump starts at 70.&lt;br /&gt;
+Everyone is runing their own RACE, in their own TIME.&lt;br /&gt;
+Don’t envy them or mock them.&lt;br /&gt;
+They are in their TIME ZONE, and you are in yours.&lt;br /&gt;
+Life is about waiting for the right moment to act.&lt;br /&gt;
+So relax, you’re not late or early.&lt;br /&gt;
+You are very much on TIME, &lt;br /&gt;
+and in your TIME ZONE destiny set up for you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;正文&quot;&gt;正文&lt;/h2&gt;
+
+&lt;p&gt;在雁栖湖修了一门计算机学院的课叫做Advanced Software Engineering，我是软件的门外汉，Software Engineering 对我来说完全是一种陌生的领域&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 25 Jan 2019 05:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/01/25/hello-2019/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/01/25/hello-2019/</guid>
+        
+        <category>生活</category>
+        
+        
+      </item>
     
       <item>
         <title>Hello 2015</title>
