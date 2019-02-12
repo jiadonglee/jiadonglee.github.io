@@ -5,9 +5,103 @@
     <description>程序与设计，天文学研究生，艺术和技术，白日梦 | 李佳东，Tech &amp; Mobile Lover，Astronomer，Dreamer | 这里是 @Jousdon 的个人博客.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 25 Jan 2019 17:48:44 +0800</pubDate>
-    <lastBuildDate>Fri, 25 Jan 2019 17:48:44 +0800</lastBuildDate>
+    <pubDate>Tue, 12 Feb 2019 20:43:09 +0800</pubDate>
+    <lastBuildDate>Tue, 12 Feb 2019 20:43:09 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>MySQL笔记 -02</title>
+        <description>&lt;h2 id=&quot;数据库的基本操作&quot;&gt;数据库的基本操作&lt;/h2&gt;
+&lt;p&gt;查看当前DB: &lt;code class=&quot;highlighter-rouge&quot;&gt;show databases;&lt;/code&gt;&lt;br /&gt;
+添加DB: &lt;code class=&quot;highlighter-rouge&quot;&gt;create database gc;&lt;/code&gt;&lt;br /&gt;
+删除DB: &lt;code class=&quot;highlighter-rouge&quot;&gt;drop database gc;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;数据类型&quot;&gt;数据类型&lt;/h3&gt;
+&lt;p&gt;数据库组成结构&lt;br /&gt;
+&lt;a href=&quot;../img/in-post/mysql_02.png&quot;&gt;avatar&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;创建数据表&quot;&gt;创建数据表&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;create table account(
+  id bigint(20),
+  createTime datetime,
+  ip varchar(255),
+  brief text,
+  gender int(11),
+)
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;删除数据表&quot;&gt;删除数据表&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;drop table account;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;给数据表添加或删除列&quot;&gt;给数据表添加或删除列&lt;/h3&gt;
+</description>
+        <pubDate>Tue, 12 Feb 2019 20:25:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/02/12/mysql-02/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/12/mysql-02/</guid>
+        
+        <category>学习</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>MySQL笔记 -01</title>
+        <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;SQL is the standardized language used to access the database.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;MySQL is a database management system that allows you to manage relational databases. It is open source software backed by Oracle. It means you can use MySQL without paying a dime. Also, if you want, you can change its source code to suit your needs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;mysql在mac下的安装和配置&quot;&gt;MySQL在Mac下的安装和配置&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;给root用户添加密码&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/mysql/bin/mysqladmin -u root -p password root&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;通过终端连接server&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/mysql/bin/mysql -u root -p&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;通过终端启动或者关闭mysql&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;配置文件路径系统&quot;&gt;配置文件路径系统&lt;/h2&gt;
+&lt;p&gt;Linux: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/my.cnf&lt;/code&gt;
+Mac: &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/mysql/my.cnf&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;修改配置文件&quot;&gt;修改配置文件&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;[client]  
+default-character-set=utf8
+
+[mysqld]
+character-set-server=utf8
+default-storage-engine=INNODB
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;重启mysql&quot;&gt;重启Mysql&lt;/h3&gt;
+&lt;p&gt;Linux(CentOS): &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/init.d/mysqld restart&lt;/code&gt;&lt;br /&gt;
+Mac: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo /Library/StartupItems/MySQLCOM/MYSQLCOM restart&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 10 Feb 2019 18:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/02/10/mysql-01/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/10/mysql-01/</guid>
+        
+        <category>学习</category>
+        
+        
+      </item>
     
       <item>
         <title>Hello 2019</title>

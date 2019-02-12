@@ -1,0 +1,36 @@
+---
+layout:     post
+title:      "MySQL笔记 -02"
+subtitle:   " \"MySQL\""
+date:       2019-02-12 12:25:00
+author:     "Jordan"
+header-img: "img/post-bg-os-metro.jpg"
+catalog: true
+tags:
+    - 学习
+---
+## 数据库的基本操作
+查看当前DB: `show databases;`  
+添加DB: `create database gc;`  
+删除DB: `drop database gc;`
+
+### 数据类型
+数据库组成结构  
+[avatar](../img/in-post/mysql_02.png)
+
+### 创建数据表
+```
+create table account(
+  id bigint(20),
+  createTime datetime,
+  ip varchar(255),
+  brief text,
+  gender int(11),
+)
+```
+### 删除数据表
+```
+drop table account;
+```
+
+### 给数据表添加或删除列

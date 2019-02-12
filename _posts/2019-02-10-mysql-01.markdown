@@ -1,0 +1,39 @@
+---
+layout:     post
+title:      "MySQL笔记 -01"
+subtitle:   " \"Another Version to Data\""
+date:       2019-02-10 10:50:00
+author:     "Jordan"
+header-img: "img/post-bg-os-metro.jpg"
+catalog: true
+tags:
+    - 学习
+---
+## Intro
+>SQL is the standardized language used to access the database.
+
+>MySQL is a database management system that allows you to manage relational databases. It is open source software backed by Oracle. It means you can use MySQL without paying a dime. Also, if you want, you can change its source code to suit your needs.
+
+## MySQL在Mac下的安装和配置
+1. 给root用户添加密码  
+`/usr/local/mysql/bin/mysqladmin -u root -p password root`
+2. 通过终端连接server  
+`/usr/local/mysql/bin/mysql -u root -p`
+3. 通过终端启动或者关闭mysql
+
+## 配置文件路径系统
+Linux: `/etc/my.cnf`
+Mac: `/usr/local/mysql/my.cnf`
+
+### 修改配置文件
+```
+[client]  
+default-character-set=utf8
+
+[mysqld]
+character-set-server=utf8
+default-storage-engine=INNODB
+```
+### 重启Mysql
+Linux(CentOS): `/etc/init.d/mysqld restart`  
+Mac: `sudo /Library/StartupItems/MySQLCOM/MYSQLCOM restart`
