@@ -68,6 +68,3 @@ insert into book values(1,'t hah','content');
 insert into book(title) values('titile1');
 ```
 
-
-
-

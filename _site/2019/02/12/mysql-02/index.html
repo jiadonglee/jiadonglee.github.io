@@ -27,7 +27,7 @@
     <meta property="article:author" content="Jordan">
     
     
-    <meta property="article:tag" content="学习">
+    <meta property="article:tag" content="学习 数据库">
     
     
     <meta property="og:image" content="http://localhost:4000/img/avatar_jordan.jpg">
@@ -179,7 +179,7 @@
 
     <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/post-bg-os-metro.jpg" width="0" height="0"> -->
+<!-- <img src="/img/post-sample-image.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 
@@ -188,7 +188,7 @@
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/post-bg-os-metro.jpg');
+        background-image: url('/img/post-sample-image.jpg');
         background: ;
     }
 
@@ -205,7 +205,7 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/archive/?tag=%E5%AD%A6%E4%B9%A0" title="学习">学习</a>
+                        <a class="tag" href="/archive/?tag=%E5%AD%A6%E4%B9%A0+%E6%95%B0%E6%8D%AE%E5%BA%93" title="学习 数据库">学习 数据库</a>
                         
                     </div>
                     <h1>MySQL笔记 -02</h1>
@@ -244,7 +244,7 @@
 
 <h3 id="数据类型">数据类型</h3>
 <p>数据库组成结构<br />
-<a href="../img/in-post/mysql_02.png">avatar</a></p>
+<img src="../img/in-post/mysql_02.png" alt="DB format" /></p>
 
 <h3 id="创建数据表">创建数据表</h3>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -268,6 +268,51 @@
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <h3 id="给数据表添加或删除列">给数据表添加或删除列</h3>
+<p>增加列：<code class="highlighter-rouge">alter table [table_name] add [column_name] [data_type] [not null] [default]</code><br />
+eg: <code class="highlighter-rouge">alter table account add c1 int(11) not null default 1;</code> (列不为空，且用1填充)</p>
+
+<p>删除列：<code class="highlighter-rouge">alter table [table_name] drop 
+[column_name]
+</code></p>
+
+<h3 id="修改某个数据列的名字或者数据类型">修改某个数据列的名字或者数据类型</h3>
+<ul>
+  <li>
+    <p>修改列信息
+<code class="highlighter-rouge">alter table [table_name] change [old_column_name] [new_column_name] [data_type]</code>
+如果只修改列的data_type，保持old &amp; new column_name相同即可</p>
+  </li>
+  <li>
+    <p>修改表名
+<code class="highlighter-rouge">alter table [table_name] rename [new_table_name]</code><br />
+eg: <code class="highlighter-rouge">alter table account rename newaccount;</code></p>
+  </li>
+</ul>
+
+<h3 id="查看或者插入表数据">查看或者插入表数据</h3>
+<ul>
+  <li>查看
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>select * from table_name;
+select col_1,col_2,... from table_name;
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>插入
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>insert into [table_name] values(val_1,val_2...)
+insert into [table_name] (col_1,col_2...) values(val_1,val_2)
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>eg:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>insert into book values(1,'t hah','content');
+insert into book(title) values('titile1');
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ul>
+
 
 
                 <hr style="visibility: hidden;">
@@ -280,6 +325,13 @@
                         </a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/2019/02/15/mysql-03/" data-toggle="tooltip" data-placement="top" title="MySQL笔记 -03">
+                        Next<br>
+                        <span>MySQL笔记 -03</span>
+                        </a>
+                    </li>
                     
                 </ul>
                 <hr style="visibility: hidden;">
@@ -335,9 +387,9 @@
         
         
                 <a data-sort="0001" 
-                    href="/archive/?tag=%E5%AD%A6%E4%B9%A0"
-                    title="学习"
-                    rel="2">学习
+                    href="/archive/?tag=%E5%AD%A6%E4%B9%A0+%E6%95%B0%E6%8D%AE%E5%BA%93"
+                    title="学习 数据库"
+                    rel="3">学习 数据库
     </div>
 </section>
 

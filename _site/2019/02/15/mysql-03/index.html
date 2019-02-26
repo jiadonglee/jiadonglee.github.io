@@ -11,31 +11,26 @@
     <meta name="theme-color" content="#000000">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Hello 2019 - 李佳东的博客 | Jordan Blog">
+    <meta property="og:title" content="MySQL笔记 -03 - 李佳东的博客 | Jordan Blog">
     
     <meta property="og:type" content="article">
-    <meta property="og:description" content="Before 2019
-
-  New York is 3 hours ahead of California,
-but it doesn’t make California slow.
-Someone graduated at the age of 22,
-but waited 5 years before securing a good job.
-Someone became a CEO ...">
+    <meta property="og:description" content="where 条件查询
+">
     
-    <meta property="article:published_time" content="2019-01-25T05:00:00Z">
+    <meta property="article:published_time" content="2019-02-15T23:28:00Z">
     
     
     <meta property="article:author" content="Jordan">
     
     
-    <meta property="article:tag" content="生活">
+    <meta property="article:tag" content="学习 数据库">
     
     
     <meta property="og:image" content="http://localhost:4000/img/avatar_jordan.jpg">
-    <meta property="og:url" content="http://localhost:4000/2019/01/25/hello-2019/">
+    <meta property="og:url" content="http://localhost:4000/2019/02/15/mysql-03/">
     <meta property="og:site_name" content="李佳东的博客 | Jordan Blog">
     
-    <title>Hello 2019 - 李佳东的博客 | Jordan Blog</title>
+    <title>MySQL笔记 -03 - 李佳东的博客 | Jordan Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -44,7 +39,7 @@ Someone became a CEO ...">
     <link rel="shortcut icon" href="/img/favicon.ico">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/2019/01/25/hello-2019/">
+    <link rel="canonical" href="http://localhost:4000/2019/02/15/mysql-03/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -180,7 +175,7 @@ Someone became a CEO ...">
 
     <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/post-bg-19-01-24.jpg" width="0" height="0"> -->
+<!-- <img src="/img/post-sample-image.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 
@@ -189,7 +184,7 @@ Someone became a CEO ...">
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/post-bg-19-01-24.jpg');
+        background-image: url('/img/post-sample-image.jpg');
         background: ;
     }
 
@@ -206,13 +201,13 @@ Someone became a CEO ...">
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/archive/?tag=%E7%94%9F%E6%B4%BB" title="生活">生活</a>
+                        <a class="tag" href="/archive/?tag=%E5%AD%A6%E4%B9%A0+%E6%95%B0%E6%8D%AE%E5%BA%93" title="学习 数据库">学习 数据库</a>
                         
                     </div>
-                    <h1>Hello 2019</h1>
+                    <h1>MySQL笔记 -03</h1>
                     
-                    <h2 class="subheading"> "Hello World, Hello Blog"</h2>
-                    <span class="meta">Posted by Jordan on January 25, 2019</span>
+                    <h2 class="subheading"> "MySQL"</h2>
+                    <span class="meta">Posted by Jordan on February 15, 2019</span>
                 </div>
             </div>
         </div>
@@ -238,56 +233,19 @@ Someone became a CEO ...">
                 <!-- Multi-Lingual -->
                 
 
-				<h2 id="before-2019">Before 2019</h2>
-<blockquote>
-  <p>New York is 3 hours ahead of California,<br />
-but it doesn’t make California slow.<br />
-Someone graduated at the age of 22,<br />
-but waited 5 years before securing a good job.<br />
-Someone became a CEO at 25,<br />
-and died at 50.<br />
-While another became a CEO at 50,<br />
-and lived to 90 years.<br />
-Someone is still single,<br />
-while someone else got mariied.<br />
-Obama retires at 55,<br />
-but DTrump starts at 70.<br />
-Everyone is runing their own RACE, in their own TIME.<br />
-Don’t envy them or mock them.<br />
-They are in their TIME ZONE, and you are in yours.<br />
-Life is about waiting for the right moment to act.<br />
-So relax, you’re not late or early.<br />
-You are very much on TIME, <br />
-and in your TIME ZONE destiny set up for you.</p>
-</blockquote>
-
-<hr />
-
-<h2 id="正文">正文</h2>
-
-<p>在雁栖湖修了一门计算机学院的课Advanced Software Engineering，我是软件的门外汉，Software Engineering对我来说完全是一种陌生的领域，虽然课上很迷糊，但是也用了全新的视角来接触新的知识，对我自己来说也是非常难得和珍贵的体验。</p>
-
-<p>大学时候能接触到的厉害的人大多数是Scientist，也难得有机会去接触真正的Engineer，在这个魔幻的时代，Engineering比Science也更接地气，在我看来也没有孰高孰低之分，完全是在不同的领域有自己的贡献，这门课最后的Project是用<a href="https://en.wikipedia.org/wiki/Model–view–controller">MVC</a>的架构做一个<a href="https://en.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a>的SaaS应用，其实这些软件开发的方式和方法在我看来也都是前所未有的陌生，但是好奇心驱使我学习和了解，谈不上精通，但是也大致弄清楚了开发的架构和脉络。这门课最后的作业是交一个Ruby on Rails的应用，由于几个组员也都不是专业学计算机或者软件的，我们简单地做了个旅行博客，具体项目在<a href="https://github.com/jiadonglee/youji_blog">这里</a>。</p>
-
-<p>后来我找到了大名鼎鼎的<a href="https://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a>，这是一个基于<a href="https://getbootstrap.com/">Bootstrap</a>的模版，然后看见大学时候的学长<a href="https://mingjiejian.github.io/">Mingjie’s Blog</a>,根据他的博客找到了<a href="https://github.com/Huxpro/huxpro.github.io">Hux</a>的Project，开心地fork并且终于搭建起了属于自己的blog。</p>
-
-<hr />
-<h2 id="一点感想">一点感想</h2>
-
-<p>谈不上情怀和理想，每个人其实都是普通人，想大多数想相同的事情，也大多数在生活的路上，所以作为19年的开篇文章，也希望还会成为一个更想成为的自己，无论今后的路怎么选择，会无悔吧。</p>
-
+				<h3 id="where-条件查询">where 条件查询</h3>
 
 
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     
-                    
-                    <li class="next">
-                        <a href="/2019/02/10/mysql-01/" data-toggle="tooltip" data-placement="top" title="MySQL笔记 -01">
-                        Next<br>
-                        <span>MySQL笔记 -01</span>
+                    <li class="previous">
+                        <a href="/2019/02/12/mysql-02/" data-toggle="tooltip" data-placement="top" title="MySQL笔记 -02">
+                        Previous<br>
+                        <span>MySQL笔记 -02</span>
                         </a>
                     </li>
+                    
                     
                 </ul>
                 <hr style="visibility: hidden;">
@@ -368,8 +326,8 @@ and in your TIME ZONE destiny set up for you.</p>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "Jordanlee";
-    var disqus_identifier = "/2019/01/25/hello-2019";
-    var disqus_url = "http://localhost:4000/2019/01/25/hello-2019/";
+    var disqus_identifier = "/2019/02/15/mysql-03";
+    var disqus_url = "http://localhost:4000/2019/02/15/mysql-03/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

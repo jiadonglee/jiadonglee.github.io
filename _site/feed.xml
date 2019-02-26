@@ -5,9 +5,22 @@
     <description>程序与设计，天文学研究生，艺术和技术，白日梦 | 李佳东，Tech &amp; Mobile Lover，Astronomer，Dreamer | 这里是 @Jousdon 的个人博客.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 12 Feb 2019 20:43:09 +0800</pubDate>
-    <lastBuildDate>Tue, 12 Feb 2019 20:43:09 +0800</lastBuildDate>
+    <pubDate>Tue, 26 Feb 2019 10:33:03 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Feb 2019 10:33:03 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>MySQL笔记 -03</title>
+        <description>&lt;h3 id=&quot;where-条件查询&quot;&gt;where 条件查询&lt;/h3&gt;
+</description>
+        <pubDate>Fri, 15 Feb 2019 23:28:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/02/15/mysql-03/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/15/mysql-03/</guid>
+        
+        <category>学习 数据库</category>
+        
+        
+      </item>
     
       <item>
         <title>MySQL笔记 -02</title>
@@ -18,7 +31,7 @@
 
 &lt;h3 id=&quot;数据类型&quot;&gt;数据类型&lt;/h3&gt;
 &lt;p&gt;数据库组成结构&lt;br /&gt;
-&lt;a href=&quot;../img/in-post/mysql_02.png&quot;&gt;avatar&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&quot;../img/in-post/mysql_02.png&quot; alt=&quot;DB format&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;创建数据表&quot;&gt;创建数据表&lt;/h3&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
@@ -42,12 +55,57 @@
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;给数据表添加或删除列&quot;&gt;给数据表添加或删除列&lt;/h3&gt;
+&lt;p&gt;增加列：&lt;code class=&quot;highlighter-rouge&quot;&gt;alter table [table_name] add [column_name] [data_type] [not null] [default]&lt;/code&gt;&lt;br /&gt;
+eg: &lt;code class=&quot;highlighter-rouge&quot;&gt;alter table account add c1 int(11) not null default 1;&lt;/code&gt; (列不为空，且用1填充)&lt;/p&gt;
+
+&lt;p&gt;删除列：&lt;code class=&quot;highlighter-rouge&quot;&gt;alter table [table_name] drop 
+[column_name]
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;修改某个数据列的名字或者数据类型&quot;&gt;修改某个数据列的名字或者数据类型&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;修改列信息
+&lt;code class=&quot;highlighter-rouge&quot;&gt;alter table [table_name] change [old_column_name] [new_column_name] [data_type]&lt;/code&gt;
+如果只修改列的data_type，保持old &amp;amp; new column_name相同即可&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;修改表名
+&lt;code class=&quot;highlighter-rouge&quot;&gt;alter table [table_name] rename [new_table_name]&lt;/code&gt;&lt;br /&gt;
+eg: &lt;code class=&quot;highlighter-rouge&quot;&gt;alter table account rename newaccount;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;查看或者插入表数据&quot;&gt;查看或者插入表数据&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;查看
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;select * from table_name;
+select col_1,col_2,... from table_name;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;插入
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;insert into [table_name] values(val_1,val_2...)
+insert into [table_name] (col_1,col_2...) values(val_1,val_2)
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;eg:&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;insert into book values(1,'t hah','content');
+insert into book(title) values('titile1');
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
         <pubDate>Tue, 12 Feb 2019 20:25:00 +0800</pubDate>
         <link>http://localhost:4000/2019/02/12/mysql-02/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/02/12/mysql-02/</guid>
         
-        <category>学习</category>
+        <category>学习 数据库</category>
         
         
       </item>
@@ -63,6 +121,10 @@
   &lt;p&gt;MySQL is a database management system that allows you to manage relational databases. It is open source software backed by Oracle. It means you can use MySQL without paying a dime. Also, if you want, you can change its source code to suit your needs.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;MySQL是一种关联数据库管理系统，关联数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。 MySQL所使用的 SQL 语言是用于访问数据库的最常用标准化语言。MySQL采用了双授权政策，它分为社区版和商业版，由于其体积小、速度快、总体拥有成本低，尤其是开源这一特点，一般中小型网站的开发都选择MySQL作为网站数据库。由于其社区版的性能卓越，配合PHP和Apache可组成良好的开发环境。&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;h2 id=&quot;mysql在mac下的安装和配置&quot;&gt;MySQL在Mac下的安装和配置&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;给root用户添加密码&lt;br /&gt;
@@ -73,7 +135,7 @@
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;配置文件路径系统&quot;&gt;配置文件路径系统&lt;/h2&gt;
-&lt;p&gt;Linux: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/my.cnf&lt;/code&gt;
+&lt;p&gt;Linux: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/my.cnf&lt;/code&gt;&lt;br /&gt;
 Mac: &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/mysql/my.cnf&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;修改配置文件&quot;&gt;修改配置文件&lt;/h3&gt;
@@ -98,7 +160,7 @@ Mac: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo /Library/StartupItems/
         <link>http://localhost:4000/2019/02/10/mysql-01/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/02/10/mysql-01/</guid>
         
-        <category>学习</category>
+        <category>学习 数据库</category>
         
         
       </item>
