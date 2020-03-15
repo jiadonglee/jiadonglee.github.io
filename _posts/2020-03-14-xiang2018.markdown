@@ -1,0 +1,140 @@
+---
+layout:     post
+title:      "Notes of Xiang et al. 2018"
+subtitle:   "https://doi.org/10.3847/1538-4365/aad237"
+date:       2020-03-14 21:00:00
+author:     "Jordan"
+header-img: "img/post-bg-19-01-24.jpg"
+catalog: true
+tags:
+
+    - 天文
+---
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+---
+
+
+
+##  3D stellar mass distribution of the Galactic disk
+
+Data:  0.93 million main-sequence turnoff and subgiant stars from LAMOST surveys.
+
+Abstract Results:
+
+1. All stellar populations younger than 10 Gyr exhibit strong disk flaring.
+2. Asymmetries and wave-like oscillations are presented in both the radial and vertical direction, with strength varying with stellar populations.
+3. Determined midplane stellar mass density raises doubts on the current estimate of local dark matter density.
+4. The radial distribution of surface mass density yields a disk scale length evolving from ∼4 kpc for the young populations to ∼2 kpc for the old populations. 
+5. The disk has a peak star formation rate (SFR) changing from 6–8 Gyr ago at the inner part to 4–6 Gyr ago at the outer part, indicating an inside-out assemblage history. The 0–1 Gyr population yields a recent disk total SFR of  $1.96 \pm 0.12 M_{\odot} yr^{-1}$.
+
+## Data 
+
+0.93 million stars selected in the *$T_{eff}-M_V$* diagram out of 4.5 million stars observed by the LAMOST Galactic surveys.
+
+### Parameterization
+
+Matching stellar paraters with $Y^2$ isochrones using a. Bayesian method.  
+
+$T_{eff}$, $M_G$, [Fe/H] (Z), [$\alpha$/Fe]  $\rightarrow$ stellar mass ($M$), age ($\tau$)
+
+
+
+## Methodology
+
+The **stellar mass function**  in a given volume of the Galactic disk is a combined result of in situ 
+
+* star formation & stellar evolution
+* stellar migration. 
+
+At any given position (with limited volume) of the disk number distribution $P(l, b, d)$  as a function of $M$, $Z$, and age $\tau$.  
+$$
+N(M, Z, \tau) = N_{in}(M, Z, \tau) + N_k(M, Z,\tau)
+$$
+  
+
+where $N_{in}$ represents stars formed in situ and $N_k$ represents stars that have migrated to their current position owing to a kinematic process.   
+$$
+N_{in}(M,Z,\tau)=\psi(\tau) \phi(Z|\tau) \xi(M_{ini}|Z,\tau)F(M|M_{ini},Z,\tau)
+$$
+  
+
+
+
+$\psi$: SFH, $\phi$: chemical enrichment history, $\xi$: stellar IMF, 
+
+Hence 
+$$
+N_{k}(M,Z,\tau)= \int \int \int \psi'(\tau) \phi'(Z|\tau) \xi'(M_{ini}|Z,\tau) \times F(M|M_{ini},Z,\tau) K_{P' \rightarrow P }(M_{ini},Z,\tau)dl'db'dd'
+$$
+$K_{P' \rightarrow P }(M_{ini},Z,\tau)$ describes a  a function to describe the probability that stars migrated from $P′(l′, b′, d′)$ to $P(l, b, d)$. 
+
+### Assumptions
+
+* the IMF is universal across the Galactic disk, not sensitively depending on $Z$ in the disk volume.
+* stellar migration due to a kinematic process does not prefer special stellar mass, so that the kinematic term in Equation is a constant function of stellar mass. 
+
+So for a stellar population of a given $\tau$ and $Z$ in a given volume, the number (and of course mass) distributions of both the in situ formed and the migrated stars are determined by only the universal: 
+
+* IMF
+* stellar evolution process
+
+**For mono-age and mono-metallicity populations, there is no need to impose assumptions on the SFH, the chemical enrichment history, and the kinematical dynamical history** 
+
+### Determination of Complete Volume
+
+Define a complete volume:  
+
+
+$$
+m_r^B - min\{M_r^B\} - A_r^B < 5\log{D} -5 < m_r^F - max\{M_r^F\} - A_r^F
+$$
+  
+
+where $D$ is the distance of the star,  $m_r^B$ and  $m_r^F$ are the bright and the faint limiting apparent magnitudes, respectively, min{$M_r^B$} and max{$M_r^F$} are the minimal bright and the maximal faint limiting absolute magnitudes for stars of all populations (age and metallicity) of concern, respectively, $A_r^B$ and $A_r^F$ are the $r$-band interstellar extinctions at the near and the farther side of the complete distance, respectively.   
+
+  
+$$
+D_{min} = 10^{(m_r^B - min \{M_r^B\} - A_r^B +5)/5}
+$$
+  
+$$
+D_{max} = 10^{(m_r^F - min \{M_r^F\} - A_r^F +5)/5}
+$$
+
+
+## Some Details
+
+2D density map in the disk $R-Z$ plane:  
+
+$0.1 \times 0.05$ kpc   
+
+$0.05 \times 0.025$ kpc
+
+
+
+### Stellar Mass Density at the Solar Radius
+
+An estimate of the midplane disk stellar mass density at the solar radius, average measurements within 7.8 $<R<$ 8.2 kpc and $\vline Z \vline<$ 50 pc.   
+
+
+
+### Star Formation History of the Disk
+
+$$
+\mathrm{SFR}=\frac{\sum_{\mathrm{ini}}^{*}}{\Delta t}
+$$
+
+$\sum_{\mathrm{ini}}^{*}$ is the initial stellar mass formed in a given time span $\Delta t$. 
+
+
+
