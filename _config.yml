@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Jiadong Li # the website title (if blank, full name will be used instead)
+title: Jiadong Li  李佳东 # the website title (if blank, full name will be used instead)
 first_name: Jiadong
 middle_name: 
 last_name: Li
-email: jdli at nao.cas.cn
+email: jdli at mpia.de
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >

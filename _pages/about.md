@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>National Astronomical Observatories, Chinese Academy of Sciences (NAOC)</a>.
+subtitle: <a href='#'>Max-Planck-Institut für Astronomie</a>.
 
 profile:
   align: right
