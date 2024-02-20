@@ -6,11 +6,10 @@ subtitle: <a href='#'>Max-Planck-Institut für Astronomie</a>.
 
 profile:
   align: right
-  image: IMG_5569.jpg
+  image: 159821708373763_.pic_hd.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>@Changbai Mountain Ski Resort</p>
-    <p>Jilin, China</p>
+    <p>Oberstdorf</p>
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
