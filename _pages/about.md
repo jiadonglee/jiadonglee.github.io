@@ -6,7 +6,7 @@ subtitle: <a href='#'>Max-Planck-Institut für Astronomie</a>.
 
 profile:
   align: right
-  image: 159821708373763_.pic_hd.jpg
+  image: IMG_5260.jpeg
   image_circular: false # crops the image to make it circular
   address: >
     <p>Oberstdorf</p>
