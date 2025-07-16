@@ -1,23 +1,26 @@
 source 'https://rubygems.org'
-group :jekyll_plugins do
-    gem 'jekyll'
-    gem 'jekyll-archives'
-    gem 'jekyll-diagrams'
-    gem 'jekyll-email-protect'
-    gem 'jekyll-feed'
-    gem 'jekyll-imagemagick'
-    gem 'jekyll-minifier'
-    gem 'jekyll-paginate-v2'
-    gem 'jekyll-scholar'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-link-attributes'
-    gem 'jekyll-twitter-plugin'
-    gem 'jemoji'
-    gem 'mini_racer'
-    gem 'unicode_utils'
-    gem 'webrick'
-end
-group :other_plugins do
-    gem 'httparty'
-    gem 'feedjira'
-end
+
+gem 'jekyll', '~> 3.9'
+gem 'nokogiri', '~> 1.13.8'  # Fix nokogiri version
+gem 'kramdown-parser-gfm'  # Add missing parser
+gem 'jekyll-archives'
+gem 'jekyll-email-protect'
+gem 'jekyll-feed'
+gem 'jekyll-paginate-v2'
+gem 'jekyll-scholar'
+gem 'jekyll-sitemap'
+gem 'jekyll-twitter-plugin'
+gem 'jemoji'
+gem 'webrick'
+gem 'unicode_utils'
+
+# For HTTP requests
+gem 'httparty'
+gem 'feedjira'
+
+# Disable problematic gems for now
+# gem 'jekyll-imagemagick'
+# gem 'jekyll-minifier'
+# gem 'jekyll-link-attributes'
+# gem 'jekyll-diagrams'
+# gem 'mini_racer'

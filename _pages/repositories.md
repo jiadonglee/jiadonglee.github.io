@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Stats. of JDL's Github
+description: Stats. of JD's Github
 nav: true
 nav_order: 3
 ---
