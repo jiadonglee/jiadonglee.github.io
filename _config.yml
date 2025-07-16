@@ -117,9 +117,9 @@ blog_nav_title: blog # your blog must have a title for it to be displayed in the
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
-# Pagination
-pagination:
-  enabled: true
+# Pagination (GitHub Pages compatible)
+paginate: 5
+paginate_path: /blog/page:num/
 
 # Comments
 disqus_shortname: jdl # put your disqus shortname
@@ -178,20 +178,20 @@ keep_files:
   - .nojekyll
   - .git
 
-# Plug-ins
+# Plug-ins (GitHub Pages compatible)
 plugins:
-  - jekyll-archives
-  # - jekyll-diagrams  # Disabled - not compatible
-  - jekyll-email-protect
   - jekyll-feed
-  # - jekyll-imagemagick  # Disabled - not compatible
-  # - jekyll-minifier  # Disabled - not compatible
-  - jekyll-paginate-v2
-  - jekyll/scholar
   - jekyll-sitemap
-  # - jekyll-link-attributes  # Disabled - not compatible
-  - jekyll-twitter-plugin
-  # - jemoji  # Disabled - nokogiri conflict
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
 
 # Sitemap settings
 defaults:
@@ -213,81 +213,64 @@ jekyll-minifier:
 # Jekyll Archives
 # -----------------------------------------------------------------------------
 
-jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+# Jekyll Archives - Disabled for GitHub Pages
+# jekyll-archives:
+#   enabled: [year, tags, categories]
+#   layouts:
+#     year: archive-year
+#     tag: archive-tag
+#     category: archive-category
+#   permalinks:
+#     year: '/blog/:year/'
+#     tag: '/blog/tag/:name/'
+#     category: '/blog/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
-
-# -----------------------------------------------------------------------------
-# Jekyll Scholar
-# -----------------------------------------------------------------------------
-
-scholar:
-
-  last_name: [Li]
-  first_name: [Jiadong]
-
-  style: apa
-  locale: en
-
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocessing may conflict with MathJAX if the latter is enabled.
-  # See https://github.com/alshedivat/al-folio/issues/357.
-  bibtex_filters: [latex, smallcaps, superscript]
-
-  replace_strings: true
-  join_strings: true
-
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details
-
-  query: "@*"
-
-# Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
-
-# Maximum number of authors to be shown for each publication (more authors are visible on click)
-# max_author_limit: 3  # leave blank to always show all authors
-more_authors_animation_delay: 10  # more authors are revealed on click using animation; smaller delay means faster animation
-
+# display_tags: ['formatting', 'images', 'links', 'math', 'code']
 
 # -----------------------------------------------------------------------------
-# Jekyll Link Attributes 
+# Jekyll Scholar - Disabled for GitHub Pages
 # -----------------------------------------------------------------------------
 
-# These are the defaults
-external_links:
-  enabled: true
-  rel: external nofollow noopener
-  target: _blank
-  exclude:
+# scholar:
+#   last_name: [Li]
+#   first_name: [Jiadong]
+#   style: apa
+#   locale: en
+#   source: /_bibliography/
+#   bibliography: papers.bib
+#   bibliography_template: bib
+#   bibtex_filters: [latex, smallcaps, superscript]
+#   replace_strings: true
+#   join_strings: true
+#   details_dir: bibliography
+#   details_layout: bibtex.html
+#   details_link: Details
+#   query: "@*"
 
+# filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
+# more_authors_animation_delay: 10
+
+
+# Jekyll Link Attributes - Disabled for GitHub Pages
+# external_links:
+#   enabled: true
+#   rel: external nofollow noopener
+#   target: _blank
+#   exclude:
 
 # -----------------------------------------------------------------------------
-# Responsive WebP Images
+# Responsive WebP Images - Disabled for GitHub Pages
 # -----------------------------------------------------------------------------
 
-imagemagick:
-  enabled: true # enables responsive images for your site (recomended, see https://github.com/alshedivat/al-folio/issues/537)
-  widths:
-    - 480
-    - 800
-    - 1400
-  input_directories:
-    - assets/img/
-  input_formats:
+# imagemagick:
+#   enabled: true
+#   widths:
+#     - 480
+#     - 800
+#     - 1400
+#   input_directories:
+#     - assets/img/
+#   input_formats:
     - ".jpg"
     - ".jpeg"
     - ".png"
