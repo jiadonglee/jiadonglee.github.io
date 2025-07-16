@@ -201,16 +201,7 @@ defaults:
       sitemap: false
 
 # -----------------------------------------------------------------------------
-# Jekyll Minifier
-# -----------------------------------------------------------------------------
-
-jekyll-minifier:
-  exclude: ['robots.txt']
-  uglifier_args:
-    harmony: true
-
-# -----------------------------------------------------------------------------
-# Jekyll Archives
+# Jekyll Archives - Disabled for GitHub Pages
 # -----------------------------------------------------------------------------
 
 # Jekyll Archives - Disabled for GitHub Pages
@@ -271,20 +262,20 @@ jekyll-minifier:
 #   input_directories:
 #     - assets/img/
 #   input_formats:
-    - ".jpg"
-    - ".jpeg"
-    - ".png"
-    - ".tiff"
-  output_formats:
-    webp: "-resize 800x"
+#     - ".jpg"
+#     - ".jpeg"
+#     - ".png"
+#     - ".tiff"
+#   output_formats:
+#     webp: "-resize 800x"
 
 # -----------------------------------------------------------------------------
-# Jekyll Diagrams
+# Jekyll Diagrams - Disabled for GitHub Pages
 # -----------------------------------------------------------------------------
 
-jekyll-diagrams:
-    # configuration, see https://github.com/zhustec/jekyll-diagrams.
-    # feel free to comment out this section if not using jekyll diagrams.
+# jekyll-diagrams:
+#     # configuration, see https://github.com/zhustec/jekyll-diagrams.
+#     # feel free to comment out this section if not using jekyll diagrams.
 
 
 # -----------------------------------------------------------------------------
