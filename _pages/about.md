@@ -17,6 +17,11 @@ social: true  # includes social icons at the bottom of the page
 ---
 My research focuses on understanding the intricacies of star formation and stellar physics, leveraging extensive datasets. I employ advanced methodologies, including machine learning techniques, statistical inference, and predictive modeling, to analyze data from leading astronomical surveys such as SDSS-V/APOGEE, Gaia, LAMOST, and CSST. **Specifically, my work centers on the identification and statistical analysis of binary stars, the stellar initial mass function (**IMF**), and the physics of stellar atmosphere models.** These areas are fundamental to my broader investigation into stellar populations and the assembly history of the Milky Way.
 
+I was born in Benxi, a small city in Northeast China. When the People's Republic was founded, this place was a powerhouse of steel and coal. Winters here bite with bitter cold, but come autumn, the hillsides blaze with maple leaves in breathtaking beauty.
+
+After finishing high school in Benxi, I moved to Beijing to study astronomy at Beijing Normal University (BNU), home to one of China's oldest astronomy departments. Later, I pursued my PhD at the National Astronomical Observatories of China (NAOC), Chinese Academy of Sciences, under the guidance of Professor Liu Chao. During my doctoral studies, I spent time as a visiting researcher at the Flatiron Institute in New York.
+In the winter of 2023, I made my way to Heidelberg to begin my postdoctoral journey at MPIA, working alongside Professor Hans-Walter Rix.
+
 ## Selected Publications
 
 <div class="publications">
