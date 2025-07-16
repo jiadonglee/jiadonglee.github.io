@@ -110,9 +110,6 @@ nav_order: 1
   <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...972..112C" target="_blank">ADS</a> |
   <a href="https://arxiv.org/abs/2310.13050" target="_blank">arXiv</a>
 </div>
-  <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...972..112C" target="_blank">ADS</a> |
-  <a href="https://arxiv.org/abs/2310.13050" target="_blank">arXiv</a>
-</div>
 
 <h2 class="year">2023</h2>
 <div class="publication">
