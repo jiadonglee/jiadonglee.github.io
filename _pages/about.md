@@ -17,47 +17,13 @@ social: true  # includes social icons at the bottom of the page
 ---
 My research focuses on understanding the intricacies of star formation and stellar physics, leveraging extensive datasets. I employ advanced methodologies, including machine learning techniques, statistical inference, and predictive modeling, to analyze data from leading astronomical surveys such as SDSS-V/APOGEE, Gaia, LAMOST, and CSST. **Specifically, my work centers on the identification and statistical analysis of binary stars, the stellar initial mass function (**IMF**), and the physics of stellar atmosphere models.** These areas are fundamental to my broader investigation into stellar populations and the assembly history of the Milky Way.
 
-I was born in Benxi, a small city in Northeast China. When the People's Republic was founded, this place was a powerhouse of steel and coal. Winters here bite with bitter cold, but come autumn, the hillsides blaze with maple leaves in breathtaking beauty.
+I moved to Beijing to study astronomy at Beijing Normal University (BNU), home to one of China's oldest astronomy departments. Later, I pursued my PhD at the National Astronomical Observatories of China (NAOC), Chinese Academy of Sciences, under the guidance of Professor Liu Chao. During my doctoral studies, I spent time as a visiting researcher at the Flatiron Institute in New York.
 
-After finishing high school in Benxi, I moved to Beijing to study astronomy at Beijing Normal University (BNU), home to one of China's oldest astronomy departments. Later, I pursued my PhD at the National Astronomical Observatories of China (NAOC), Chinese Academy of Sciences, under the guidance of Professor Liu Chao. During my doctoral studies, I spent time as a visiting researcher at the Flatiron Institute in New York.
 In the winter of 2023, I made my way to Heidelberg to begin my postdoctoral journey at MPIA, working alongside Professor Hans-Walter Rix.
 
 ## Selected Publications
 
-<div class="publications">
-  <div class="publication">
-    <strong>Millions of Main-Sequence Binary Stars from Gaia BP/RP Spectra</strong><br>
-    <em class="author-highlight">Li, Jiadong</em>, Rix, Hans-Walter, Ting, Yuan-Sen, Müller-Horn, Johanna, El-Badry, Kareem, Liu, Chao, Seeburger, Rhys, Green, Gregory M., Zhang, Xiangyu<br>
-    <em>arXiv e-prints</em>, arXiv:2507.09622 (2025)<br>
-    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250709622L" target="_blank">ADS</a> |
-    <a href="https://arxiv.org/abs/2507.09622" target="_blank">arXiv</a>
-  </div>
-
-  <div class="publication">
-    <strong>Differentiable Stellar Atmospheres with Physics-Informed Neural Networks</strong><br>
-    <em class="author-highlight">Li, Jiadong</em>, Jian, Mingjie, Ting, Yuan-Sen, Green, Gregory M.<br>
-    <em>arXiv e-prints</em>, arXiv:2507.06357 (2025)<br>
-    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250706357L" target="_blank">ADS</a> |
-    <a href="https://arxiv.org/abs/2507.06357" target="_blank">arXiv</a>
-  </div>
-
-  <div class="publication">
-    <strong>Identification of 30,000 White Dwarf-Main Sequence binaries candidates from Gaia DR3 BP/RP(XP) low-resolution spectra</strong><br>
-    <em class="author-highlight">Li, Jiadong</em>, Ting, Yuan-Sen, Rix, Hans-Walter, Green, Gregory M., Hogg, David W., Ren, Juan-Juan, Müller-Horn, Johanna, Seeburger, Rhys<br>
-    <em>arXiv e-prints</em>, arXiv:2501.14494 (2025)<br>
-    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250114494L" target="_blank">ADS</a> |
-    <a href="https://arxiv.org/abs/2501.14494" target="_blank">arXiv</a>
-  </div>
-
-  <div class="publication">
-    <strong>AspGap: Augmented Stellar Parameters and Abundances for 37 Million Red Giant Branch Stars from Gaia XP Low-resolution Spectra</strong><br>
-    <em class="author-highlight">Li, Jiadong</em>, Wong, Kaze W. K., Hogg, David W., Rix, Hans-Walter, Chandra, Vedant<br>
-    <em>ApJS</em>, 272, 2 (2024)<br>
-    <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..272....2L" target="_blank">ADS</a> |
-    <a href="https://arxiv.org/abs/2309.14294" target="_blank">arXiv</a>
-  </div>
-
-  <div class="publication">
+<div class="publication">
     <strong>Stellar initial mass function varies with metallicity and time</strong><br>
     <em class="author-highlight">Li, Jiadong</em>, Liu, Chao, Zhang, Zhi-Yu, Tian, Hao, Fu, Xiaoting, Li, Jiao, Yan, Zhi-Qiang<br>
     <em>Nature</em>, 613, 460-462 (2023)<br>
@@ -65,7 +31,49 @@ In the winter of 2023, I made my way to Heidelberg to begin my postdoctoral jour
     <a href="https://arxiv.org/abs/2301.07029" target="_blank">arXiv</a>
   </div>
 
+<div class="publications">
   <div class="publication">
+    <strong>Variations in the Milky Way's Stellar Mass Function at [Fe/H] < -1</strong><br>
+    <em class="author-highlight">Li, Jiadong</em>, Rix, Hans-Walter, Ting, Yuan-Sen, Wang, Yu-Ting, Mészáros, Szabolcs, Medan, Ilija, Liu, Chao, Yan, Zhiqiang, Smith, Peter J., Qiu, Dan, Roman-Lopes, Alexandre, Green, Gregory M., Horta, Danny, Way, Zachary, Matsuno, Tadafumi, Souza, Stefano, Fernández-Trincado, José G.<br>
+    <em>ApJL</em>, accepted (2026)<br>
+    <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260119522L" target="_blank">ADS</a> |
+    <a href="https://arxiv.org/abs/2601.19522" target="_blank">arXiv</a> |
+    <a href="https://doi.org/10.3847/2041-8213/ae3d39" target="_blank">DOI</a>
+  </div>
+
+<div class="publication">
+    <strong>Millions of Main-Sequence Binary Stars from Gaia BP/RP Spectra</strong><br>
+    <em class="author-highlight">Li, Jiadong</em>, Rix, Hans-Walter, Ting, Yuan-Sen, Müller-Horn, Johanna, El-Badry, Kareem, Liu, Chao, Seeburger, Rhys, Green, Gregory M., Zhang, Xiangyu<br>
+    <em>A&A</em>
+    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250709622L" target="_blank">ADS</a> |
+    <a href="https://arxiv.org/abs/2507.09622" target="_blank">arXiv</a>
+  </div>
+
+<div class="publication">
+    <strong>Differentiable Stellar Atmospheres with Physics-Informed Neural Networks</strong><br>
+    <em class="author-highlight">Li, Jiadong</em>, Jian, Mingjie, Ting, Yuan-Sen, Green, Gregory M.<br>
+    <em>arXiv e-prints</em>, arXiv:2507.06357 (2025)<br>
+    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250706357L" target="_blank">ADS</a> |
+    <a href="https://arxiv.org/abs/2507.06357" target="_blank">arXiv</a>
+  </div>
+
+<div class="publication">
+    <strong>Identification of 30,000 White Dwarf-Main Sequence binaries candidates from Gaia DR3 BP/RP(XP) low-resolution spectra</strong><br>
+    <em class="author-highlight">Li, Jiadong</em>, Ting, Yuan-Sen, Rix, Hans-Walter, Green, Gregory M., Hogg, David W., Ren, Juan-Juan, Müller-Horn, Johanna, Seeburger, Rhys<br>
+    <em>ApJS</em>
+    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250114494L" target="_blank">ADS</a> |
+    <a href="https://arxiv.org/abs/2501.14494" target="_blank">arXiv</a>
+  </div>
+
+<div class="publication">
+    <strong>AspGap: Augmented Stellar Parameters and Abundances for 37 Million Red Giant Branch Stars from Gaia XP Low-resolution Spectra</strong><br>
+    <em class="author-highlight">Li, Jiadong</em>, Wong, Kaze W. K., Hogg, David W., Rix, Hans-Walter, Chandra, Vedant<br>
+    <em>ApJS</em>, 272, 2 (2024)<br>
+    <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..272....2L" target="_blank">ADS</a> |
+    <a href="https://arxiv.org/abs/2309.14294" target="_blank">arXiv</a>
+  </div>
+
+<div class="publication">
     <strong>Stellar Parameterization of LAMOST M Dwarf Stars</strong><br>
     <em class="author-highlight">Li, Jiadong</em>, Liu, Chao, Zhang, Bo, Tian, Hao, Qiu, Dan, Tian, Haijun<br>
     <em>ApJS</em>, 253, 45 (2021)<br>

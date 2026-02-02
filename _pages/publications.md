@@ -14,6 +14,16 @@ nav_order: 1
   <p><strong>Complete Publication List:</strong> <a href="https://ui.adsabs.harvard.edu/user/libraries/XAmJah0MQd2BX_PRk3cxJQ" target="_blank">ADS Library</a></p>
 </div>
 
+<h2 class="year">2026</h2>
+<div class="publication">
+  <strong>Variations in the Milky Way's Stellar Mass Function at [Fe/H] < -1</strong><br>
+  <em class="author-highlight">Li, Jiadong</em>, Rix, Hans-Walter, Ting, Yuan-Sen, Wang, Yu-Ting, Mészáros, Szabolcs, Medan, Ilija, Liu, Chao, Yan, Zhiqiang, Smith, Peter J., Qiu, Dan, Roman-Lopes, Alexandre, Green, Gregory M., Horta, Danny, Way, Zachary, Matsuno, Tadafumi, Souza, Stefano, Fernández-Trincado, José G.<br>
+  <em>ApJL</em>, accepted (2026)<br>
+  <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260119522L" target="_blank">ADS</a> |
+  <a href="https://arxiv.org/abs/2601.19522" target="_blank">arXiv</a> |
+  <a href="https://doi.org/10.3847/2041-8213/ae3d39" target="_blank">DOI</a>
+</div>
+
 <h2 class="year">2025</h2>
 <div class="publication">
   <strong>Millions of Main-Sequence Binary Stars from Gaia BP/RP Spectra</strong><br>
