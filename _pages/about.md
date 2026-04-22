@@ -6,10 +6,10 @@ subtitle: <a href='#'>Max-Planck-Institut für Astronomie</a>.
 
 profile:
   align: right
-  image: jdli_sicily.jpg
+  image: jdli.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>    Sicily, 2025</p>
+    <p>   </p>
 
 news: false  # includes a list of news items
 selected_papers: false # disabled for GitHub Pages compatibility
