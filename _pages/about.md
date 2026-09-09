@@ -34,9 +34,9 @@ In the winter of 2023, I made my way to Heidelberg to begin my postdoctoral jour
 <div class="publications">
   <div class="publication">
     <strong>Variations in the Milky Way's Stellar Mass Function at [Fe/H] < -1</strong><br>
-    <em class="author-highlight">Li, Jiadong</em>, Rix, Hans-Walter, Ting, Yuan-Sen, Wang, Yu-Ting, Mészáros, Szabolcs, Medan, Ilija, Liu, Chao, Yan, Zhiqiang, Smith, Peter J., Qiu, Dan, Roman-Lopes, Alexandre, Green, Gregory M., Horta, Danny, Way, Zachary, Matsuno, Tadafumi, Souza, Stefano, Fernández-Trincado, José G.<br>
-    <em>ApJL</em>, accepted (2026)<br>
-    <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260119522L" target="_blank">ADS</a> |
+    <em class="author-highlight">Li, Jiadong</em>, Rix, Hans-Walter, Ting, Yuan-Sen, Wang, Yu-Ting, Mészáros, Szabolcs, Medan, Ilija, Liu, Chao, Yan, Zhiqiang, Smith, Peter J., Qiu, Dan, Roman-Lopes, Alexandre, Green, Gregory M., Horta, Danny, Way, Zachary, Matsuno, Tadafumi, Souza, Stefano O., Fernández-Trincado, José G.<br>
+    <em>ApJL</em>, 998, L33 (2026)<br>
+    <a href="https://ui.adsabs.harvard.edu/abs/2026ApJ...998L..33L" target="_blank">ADS</a> |
     <a href="https://arxiv.org/abs/2601.19522" target="_blank">arXiv</a> |
     <a href="https://doi.org/10.3847/2041-8213/ae3d39" target="_blank">DOI</a>
   </div>
@@ -44,9 +44,10 @@ In the winter of 2023, I made my way to Heidelberg to begin my postdoctoral jour
 <div class="publication">
     <strong>Millions of Main-Sequence Binary Stars from Gaia BP/RP Spectra</strong><br>
     <em class="author-highlight">Li, Jiadong</em>, Rix, Hans-Walter, Ting, Yuan-Sen, Müller-Horn, Johanna, El-Badry, Kareem, Liu, Chao, Seeburger, Rhys, Green, Gregory M., Zhang, Xiangyu<br>
-    <em>A&A</em>
-    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250709622L" target="_blank">ADS</a> |
-    <a href="https://arxiv.org/abs/2507.09622" target="_blank">arXiv</a>
+    <em>A&A</em>, 704, A126 (2025)<br>
+    <a href="https://ui.adsabs.harvard.edu/abs/2025A&A...704A.126L" target="_blank">ADS</a> |
+    <a href="https://arxiv.org/abs/2507.09622" target="_blank">arXiv</a> |
+    <a href="https://doi.org/10.1051/0004-6361/202556362" target="_blank">DOI</a>
   </div>
 
 <div class="publication">
@@ -58,11 +59,12 @@ In the winter of 2023, I made my way to Heidelberg to begin my postdoctoral jour
   </div>
 
 <div class="publication">
-    <strong>Identification of 30,000 White Dwarf-Main Sequence binaries candidates from Gaia DR3 BP/RP(XP) low-resolution spectra</strong><br>
+    <strong>Identification of 30,000 White Dwarf-Main Sequence Binary Candidates from Gaia DR3 BP/RP (XP) Low-resolution Spectra</strong><br>
     <em class="author-highlight">Li, Jiadong</em>, Ting, Yuan-Sen, Rix, Hans-Walter, Green, Gregory M., Hogg, David W., Ren, Juan-Juan, Müller-Horn, Johanna, Seeburger, Rhys<br>
-    <em>ApJS</em>
-    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250114494L" target="_blank">ADS</a> |
-    <a href="https://arxiv.org/abs/2501.14494" target="_blank">arXiv</a>
+    <em>ApJS</em>, 279, 47 (2025)<br>
+    <a href="https://ui.adsabs.harvard.edu/abs/2025ApJS..279...47L" target="_blank">ADS</a> |
+    <a href="https://arxiv.org/abs/2501.14494" target="_blank">arXiv</a> |
+    <a href="https://doi.org/10.3847/1538-4365/addf3a" target="_blank">DOI</a>
   </div>
 
 <div class="publication">
