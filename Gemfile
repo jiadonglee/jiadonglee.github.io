@@ -14,6 +14,18 @@ gem 'jemoji'
 gem 'webrick'
 gem 'unicode_utils'
 
+# Plugins from _config.yml that were missing
+gem 'jekyll-gist'
+gem 'jekyll-paginate'
+gem 'jekyll-coffeescript'
+gem 'jekyll-seo-tag'
+gem 'jekyll-github-metadata'
+gem 'jekyll-relative-links'
+gem 'jekyll-optional-front-matter'
+gem 'jekyll-readme-index'
+gem 'jekyll-default-layout'
+gem 'jekyll-titles-from-headings'
+
 # For HTTP requests
 gem 'httparty'
 gem 'feedjira'
