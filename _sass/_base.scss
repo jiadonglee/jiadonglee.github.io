@@ -463,6 +463,100 @@ footer.sticky-bottom {
 
 // Publications
 
+.publication {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  border-left: 3px solid var(--global-theme-color);
+  background-color: var(--global-card-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  strong {
+    color: var(--global-theme-color);
+  }
+
+  em {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--global-text-color);
+  }
+
+  a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: underline;
+    }
+  }
+
+  .pub-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .pub-text {
+    flex: 1;
+  }
+
+  .pub-figure {
+    flex: 0 0 200px;
+    max-width: 200px;
+
+    img {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      flex: none;
+      max-width: 100%;
+    }
+  }
+
+  .pub-caption {
+    font-size: 0.9em;
+    color: var(--global-text-color-light);
+    margin-top: 0.5em;
+    font-style: italic;
+  }
+}
+
+.author-highlight {
+  font-style: normal !important;
+  font-weight: bold;
+}
+
+html[data-theme='dark'] {
+  .publication {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .author-highlight {
+    color: #ff69b4 !important;
+    background-color: rgba(255, 105, 180, 0.1);
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+}
+
 .publications {
   margin-top: 2rem;
   h1 {
