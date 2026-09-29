@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="wash"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="edge"><feTurbulence baseFrequency=".018" numOctaves="3" seed="8" result="grain"/><feDisplacementMap in="SourceGraphic" in2="grain" scale="16"/></filter>
+    <linearGradient id="fade" x2="0" y2="1"><stop stop-color="#667266" stop-opacity=".2"/><stop offset="1" stop-color="#667266" stop-opacity="0"/></linearGradient>
+  </defs>
+  <g filter="url(#wash)" fill="#758071" opacity=".12">
+    <path d="M-100 670 Q0 610 100 470 T300 420 Q400 220 500 360 T700 430 Q770 300 840 440 T1100 480 Q1200 320 1300 400 T1700 480 L1700 800H-100Z"/>
+    <path d="M900 530 Q1000 330 1080 340 Q1140 160 1200 280 Q1260 230 1340 390 Q1430 300 1600 490 L1700 800H850Z"/>
+  </g>
+  <path filter="url(#edge)" fill="url(#fade)" d="M-80 670 Q60 590 160 620 L210 560 250 588 315 450 350 430 385 510 420 480 500 600 Q590 610 720 690 L880 800H-80Z"/>
+  <g fill="none" stroke="#626f61" opacity=".12" stroke-linecap="round">
+    <path d="M25 715 Q300 680 570 725 T1100 715"/>
+    <path d="M280 747 Q680 724 950 748 T1500 732"/>
+  </g>
+</svg>
