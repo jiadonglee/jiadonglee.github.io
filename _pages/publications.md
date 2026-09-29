@@ -2,10 +2,13 @@
 layout: page
 permalink: /publications/
 title: publications
-description: refereed publications
+description: publications and submitted manuscripts
 nav: true
 nav_order: 1
 ---
+
+
+
 <!-- _pages/publications.md -->
 
 <div class="publications">
@@ -15,6 +18,11 @@ nav_order: 1
 </div>
 
 <h2 class="year">2026</h2>
+<div class="publication" id="ifmr-paper">
+  <strong>Nature vs. nurture in wide binary white dwarf masses: mergers in hierarchical triples and metallicity</strong><br>
+  <em class="author-highlight">Li, Jiadong</em>, Hallakoun, Na’ama, Rix, Hans-Walter, Shahaf, Sahar, El-Badry, Kareem<br>
+  <em>submitted</em> (2026)
+</div>
 <div class="publication">
   <strong>Variations in the Milky Way's Stellar Mass Function at [Fe/H] < -1</strong><br>
   <em class="author-highlight">Li, Jiadong</em>, Rix, Hans-Walter, Ting, Yuan-Sen, Wang, Yu-Ting, Mészáros, Szabolcs, Medan, Ilija, Liu, Chao, Yan, Zhiqiang, Smith, Peter J., Qiu, Dan, Roman-Lopes, Alexandre, Green, Gregory M., Horta, Danny, Way, Zachary, Matsuno, Tadafumi, Souza, Stefano, Fernández-Trincado, José G.<br>

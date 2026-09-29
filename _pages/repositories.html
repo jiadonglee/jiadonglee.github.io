@@ -1,0 +1,61 @@
+---
+layout: null
+permalink: /repositories/
+title: repositories
+nav: true
+nav_order: 3
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research software · Jiadong Li</title>
+  <meta name="description" content="Research software by Jiadong Li: stellar SEDs, binary inference, differentiable atmospheres and survey spectroscopy.">
+  <meta name="theme-color" content="#151815">
+  <meta property="og:title" content="Jiadong Li · Reading starlight">
+  <meta property="og:description" content="Hidden companions. The origins of stars. The physics of starlight. Explore my research.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jiadonglee.github.io/repositories/">
+  <link rel="canonical" href="https://jiadonglee.github.io/repositories/">
+  <link rel="icon" href="/assets/img/J.png">
+  <link rel="stylesheet" href="/assets/css/research-home.css?v=6">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap">
+  <a class="wordmark" href="/" aria-label="Jiadong Li home"><span class="jd-monogram">JD</span></a>
+  <nav aria-label="Main navigation"><a href="/#research">Research</a><a href="/publications/">Publications</a><a href="/repositories/" aria-current="page">Code</a><a href="/#about">About</a><a href="/cv/">CV <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="main" class="software-page wrap">
+  <section class="software-intro" aria-labelledby="software-title">
+    <p class="eyebrow">RESEARCH SOFTWARE</p>
+    <h1 id="software-title">From starlight<br>to <em>stellar physics.</em></h1>
+    <p>I build tools to connect the light we observe to the stars that produce it: assembling spectra, testing hidden companions, modelling atmospheres, and measuring stellar populations.</p>
+    <div class="software-topics"><a href="#observations">01 / Observations &amp; binaries ↓</a><a href="#physics">02 / Spectral physics ↓</a><a href="#populations">03 / Stellar populations ↓</a></div>
+  </section>
+  <section class="featured-software" aria-labelledby="sedkit-title">
+    <div><p class="eyebrow">FROM THE HOMEPAGE DEMO TO REAL DATA</p><h2 id="sedkit-title">sedkit</h2><p class="software-question">One source. One star—or two?</p><p>Download Gaia XP spectra and linked infrared photometry, then compare single-star and coeval-binary SED models using absolute fluxes.</p><p>A compact empirical model runs with NumPy and SciPy. Examples connect SED fitting to SPHEREx data and joint radial-velocity modelling.</p><div class="software-links"><a href="https://github.com/jiadonglee/sedkit">Repository ↗</a><a href="https://github.com/jiadonglee/sedkit/blob/main/examples/quickstart.ipynb">Quickstart ↗</a></div></div>
+    <div class="code-example"><span>DOWNLOAD → FIT → PLOT</span><pre><code>from sedkit import download, fit, plot
+
+sed = download("1521154374020165376")
+result = fit(sed, age_gyr=5.0, feh=0.0)
+fig = plot(sed, result)</code></pre><p>This example fixes age and metallicity. A preference for the binary model is a diagnostic, not a confirmed companion.</p></div>
+  </section>
+  <section class="software-group" id="observations" aria-labelledby="observations-title"><div class="software-group-heading"><p class="chapter">01 / OBSERVATIONS &amp; BINARIES</p><h2 id="observations-title">Build the spectrum.<br>Test the hidden companion.</h2></div><div class="software-grid">
+    <article class="software-card"><span class="software-kind">SED INFERENCE</span><h3>sedkit</h3><p>Compare the light of a single star with the physical flux sum of a coeval pair, combining optical spectra and infrared photometry.</p><p class="software-use">For exploring unresolved companions and their contributions to the observed SED.</p><div class="software-links"><a href="https://github.com/jiadonglee/sedkit">Code ↗</a><a href="https://github.com/jiadonglee/sedkit/blob/main/docs/orblet.md">Orbit interface ↗</a></div></article>
+    <article class="software-card"><span class="software-kind">GAIA × SPHEREx</span><h3>XphereX</h3><p>Extract SPHEREx spectrophotometry with aperture and PSF methods, account for source proper motion, and associate the results with Gaia XP spectra.</p><p class="software-use">For extending the observed stellar SED from optical to infrared wavelengths.</p><div class="software-links"><a href="https://github.com/jiadonglee/XphereX">Code &amp; examples ↗</a></div></article>
+  </div></section>
+  <section class="software-group" id="physics" aria-labelledby="physics-title"><div class="software-group-heading"><p class="chapter">02 / SPECTRAL PHYSICS</p><h2 id="physics-title">Connect an atmosphere<br>to the light it produces.</h2></div><div class="software-grid">
+    <article class="software-card"><span class="software-kind">PHYSICS-INFORMED ATMOSPHERES</span><h3>Kurucz-a1</h3><p>A neural emulator of one-dimensional LTE stellar atmospheres, incorporating hydrostatic equilibrium as a physical constraint.</p><p class="software-use">For predicting atmospheric structure as a function of stellar parameters and optical depth.</p><div class="software-links"><a href="https://github.com/jiadonglee/kurucz-a1">Code ↗</a><a href="https://arxiv.org/abs/2507.06357">Paper ↗</a></div></article>
+    <article class="software-card"><span class="software-kind">DIFFERENTIABLE SPECTRAL SYNTHESIS</span><h3>Jorg</h3><p>A JAX-based stellar spectrum synthesis library with atmosphere interpolation, line and continuum opacity, and radiative transfer.</p><p class="software-use">For connecting stellar parameters to synthetic spectra and exploring derivatives. The direct-fitting interface is experimental.</p><div class="software-links"><a href="https://github.com/jiadonglee/jorg">Code &amp; examples ↗</a></div></article>
+  </div></section>
+  <section class="software-group" id="populations" aria-labelledby="populations-title"><div class="software-group-heading"><p class="chapter">03 / STELLAR POPULATIONS</p><h2 id="populations-title">Measure individual stars.<br>Read the Galaxy.</h2></div><div class="software-grid">
+    <article class="software-card"><span class="software-kind">GAIA XP STELLAR LABELS</span><h3>AspGap</h3><p>Infer stellar parameters and chemical abundances from low-resolution Gaia XP spectra, using the information learned from APOGEE.</p><p class="software-use">For studying the chemistry and assembly history of the Milky Way with large stellar samples.</p><div class="software-links"><a href="https://github.com/jiadonglee/aspgap">Code ↗</a><a href="https://zenodo.org/record/8002699">Catalogue ↗</a><a href="https://arxiv.org/abs/2309.14294">Paper ↗</a></div></article>
+    <article class="software-card"><span class="software-kind">COOL-STAR SPECTROSCOPY</span><h3>M Dwarf Machine</h3><p>Estimate temperatures and metallicities from LAMOST M-dwarf spectra using models trained with the Stellar Label Machine.</p><p class="software-use">For characterising the low-mass stars that dominate the Galaxy by number.</p><div class="software-links"><a href="https://github.com/jiadonglee/MDwarfMachine">Code ↗</a><a href="https://arxiv.org/abs/2012.14080">Paper ↗</a></div></article>
+  </div></section>
+  <div class="software-bottom"><p>Explore the code, follow the examples, or get in touch about a scientific application.</p><a class="button" href="https://github.com/jiadonglee">More on GitHub ↗</a><a class="text-link" href="mailto:jdli@mpia.de">Get in touch ↗</a></div>
+</main>
+<footer class="wrap"><span>© Jiadong Li</span><span>Heidelberg, Germany · Looking closer at starlight.</span><a href="/blog/">Notes &amp; writing ↗</a><span class="footer-seal"><img src="/assets/img/jiadong-seal.png" alt="佳东篆书印章" width="120" height="180" loading="lazy"></span></footer>
+</body>
+</html>
