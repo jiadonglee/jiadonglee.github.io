@@ -114,8 +114,8 @@ h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.5px; color: 
 .paper-row > span:last-child { color: var(--orange); }
 
 /* About */
-.portrait { padding: 8px; background: #FAF7F1; border: 1px solid var(--line); align-self: start; }
-.portrait img { border-radius: 0; filter: grayscale(1); }
+.portrait { padding: 0; background: none; border: 0; box-shadow: none; transform: none; align-self: start; }
+.portrait img { height: auto; border-radius: 0; filter: none; }
 .about h2 .chinese { color: var(--ink); }
 .about p:not(.eyebrow) { font-size: 19.5px; color: var(--muted); }
 .about p a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: .2em; }
@@ -154,8 +154,8 @@ nav a[aria-current=page] { color: var(--orange); }
 
 /* Ink edges: frames drawn with a wavering brush line */
 .ink-defs { position: absolute; width: 0; height: 0; }
-.observatory, .science-figure, .portrait, .featured-software, .software-card { position: relative; overflow: visible; border-color: transparent; }
-.observatory::after, .science-figure::after, .portrait::after, .featured-software::after, .software-card::after {
+.observatory, .science-figure, .featured-software, .software-card { position: relative; overflow: visible; border-color: transparent; }
+.observatory::after, .science-figure::after, .featured-software::after, .software-card::after {
   content: ''; position: absolute; inset: -1px; pointer-events: none;
   border: 1.6px solid var(--ink); opacity: .6; filter: url(#ink-edge);
 }
