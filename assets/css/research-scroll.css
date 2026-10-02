@@ -19,8 +19,9 @@ body {
   font-family: var(--body);
   font-size: 19px;
   background-color: var(--bg);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.17 0 0 0 0 0.24 0 0 0 0 0.18 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
-  background-attachment: fixed;
+  background-image: radial-gradient(ellipse 120% 90% at 50% 35%, transparent 55%, #D8CCB566 100%), url('/assets/img/rice-paper.svg');
+  background-size: 100% 100%, 480px 480px;
+  background-attachment: fixed, scroll;
 }
 ::selection { background: #7B9AAF4d; }
 a:hover { color: var(--orange); }
@@ -151,8 +152,29 @@ body::before { content: none; }
 .software-bottom { font-size: 19px; }
 nav a[aria-current=page] { color: var(--orange); }
 
+/* Ink edges: frames drawn with a wavering brush line */
+.ink-defs { position: absolute; width: 0; height: 0; }
+.observatory, .science-figure, .portrait, .featured-software, .software-card { position: relative; overflow: visible; border-color: transparent; }
+.observatory::after, .science-figure::after, .portrait::after, .featured-software::after, .software-card::after {
+  content: ''; position: absolute; inset: -1px; pointer-events: none;
+  border: 1.6px solid var(--ink); opacity: .6; filter: url(#ink-edge);
+}
+.code-example { border-left-color: transparent; background: url('/assets/img/brush-rule.svg') left center / 7px 100% no-repeat; }
+
+/* Dry-brush dividers */
+.nav, .research-index, .story, footer { border-color: transparent; }
+.nav { background: url('/assets/img/brush-rule.svg') left bottom / 100% 7px no-repeat; }
+.research-index { background: url('/assets/img/brush-rule.svg') left top / 100% 6px no-repeat, url('/assets/img/brush-rule.svg') left bottom / 100% 6px no-repeat; }
+.story { background: url('/assets/img/brush-rule.svg') left bottom / 100% 5px no-repeat; }
+footer { background: url('/assets/img/brush-rule.svg') left top / 100% 7px no-repeat; }
+.hero-copy::before, .section-heading h2::after, .papers-heading h2::after { border: 0; height: 6px; background: url('/assets/img/brush-rule.svg') left center / 100% 100% no-repeat; }
+
+/* Ink bleeding in from the left edge, mist rising over the mountains */
+.ink-bleed { position: fixed; left: 0; top: 8vh; height: 84vh; width: auto; max-width: none; opacity: .24; pointer-events: none; z-index: -1; }
+.ink-mist { position: fixed; right: 9vw; bottom: 16vh; width: 230px; max-width: 34vw; opacity: .85; pointer-events: none; z-index: -1; }
+
 /* Ink-wash mountains drifting in from the lower edge */
-.ink-mountains { position: fixed; right: 0; bottom: 0; width: 620px; max-width: 70vw; opacity: .4; pointer-events: none; z-index: -1; }
+.ink-mountains { position: fixed; right: 0; bottom: 0; width: 680px; max-width: 75vw; opacity: .55; pointer-events: none; z-index: -1; }
 
 @media(max-width:740px) {
   h1 { font-size: clamp(46px, 11vw, 64px); }
@@ -169,4 +191,6 @@ nav a[aria-current=page] { color: var(--orange); }
   .eyebrow, .chapter, .instrument-top, .figure-label, .research-index, .unit { font-size: 12.5px; }
   img.footer-seal { width: 46px; order: 4; margin-left: auto; }
   .ink-mountains { opacity: .28; }
+  .ink-bleed { opacity: .12; left: -60px; }
+  .ink-mist { width: 150px; bottom: 10vh; }
 }
