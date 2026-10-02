@@ -11,14 +11,17 @@
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <svg class="ink-defs" width="0" height="0" aria-hidden="true" focusable="false"><filter id="ink-edge" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" seed="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="d"/></feMerge></filter></svg>
 
     <!-- Header -->
     {%- include header.html %}
 
     <!-- Content -->
-    <div class="container mt-5">
+    <div class="container">
       {{ content }}
     </div>
+    <img class="ink-mist" src="{{ '/assets/img/ink-mist.svg' | relative_url }}" alt="" aria-hidden="true">
+    <img class="ink-bleed" src="{{ '/assets/img/ink-bleed.svg' | relative_url }}" alt="" aria-hidden="true">
 
     <!-- Footer -->
     {%- include footer.html %}
