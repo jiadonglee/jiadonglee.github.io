@@ -169,12 +169,10 @@ nav a[aria-current=page] { color: var(--orange); }
 footer { background: url('/assets/img/brush-rule.svg') left top / 100% 7px no-repeat; }
 .hero-copy::before, .section-heading h2::after, .papers-heading h2::after { border: 0; height: 6px; background: url('/assets/img/brush-rule.svg') left center / 100% 100% no-repeat; }
 
-/* Ink bleeding in from the left edge, mist rising over the mountains */
+/* Ink bleeding in from the left edge, mist rising at the lower right */
 .ink-bleed { position: fixed; left: 0; top: 8vh; height: 84vh; width: auto; max-width: none; opacity: .24; pointer-events: none; z-index: -1; }
 .ink-mist { position: fixed; right: 9vw; bottom: 16vh; width: 230px; max-width: 34vw; opacity: .85; pointer-events: none; z-index: -1; }
 
-/* Ink-wash mountains drifting in from the lower edge */
-.ink-mountains { position: fixed; right: 0; bottom: 0; width: 680px; max-width: 75vw; opacity: .55; pointer-events: none; z-index: -1; }
 
 @media(max-width:740px) {
   h1 { font-size: clamp(46px, 11vw, 64px); }
@@ -190,7 +188,6 @@ footer { background: url('/assets/img/brush-rule.svg') left top / 100% 7px no-re
   .story p:not(.chapter), .about p:not(.eyebrow) { font-size: 18px; }
   .eyebrow, .chapter, .instrument-top, .figure-label, .research-index, .unit { font-size: 12.5px; }
   img.footer-seal { width: 46px; order: 4; margin-left: auto; }
-  .ink-mountains { opacity: .28; }
   .ink-bleed { opacity: .12; left: -60px; }
   .ink-mist { width: 150px; bottom: 10vh; }
 }

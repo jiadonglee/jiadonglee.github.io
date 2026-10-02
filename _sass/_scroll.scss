@@ -190,21 +190,12 @@ article h2,
   height: 0;
 }
 
-.ink-mountains,
 .ink-mist,
 .ink-bleed {
   position: fixed;
   max-width: none;
   pointer-events: none;
   z-index: -1;
-}
-
-.ink-mountains {
-  right: 0;
-  bottom: 0;
-  width: 680px;
-  max-width: 75vw;
-  opacity: 0.55;
 }
 
 .ink-mist {
@@ -257,9 +248,6 @@ article h2,
       width: 46px;
       margin-left: auto;
     }
-  }
-  .ink-mountains {
-    opacity: 0.28;
   }
   .ink-bleed {
     left: -60px;
