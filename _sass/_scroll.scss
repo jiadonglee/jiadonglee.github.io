@@ -190,23 +190,11 @@ article h2,
   height: 0;
 }
 
-.ink-mist,
 .ink-bleed {
   position: fixed;
   max-width: none;
   pointer-events: none;
   z-index: -1;
-}
-
-.ink-mist {
-  right: 9vw;
-  bottom: 16vh;
-  width: 230px;
-  max-width: 34vw;
-  opacity: 0.85;
-}
-
-.ink-bleed {
   left: 0;
   top: 8vh;
   height: 84vh;
@@ -252,10 +240,6 @@ article h2,
   .ink-bleed {
     left: -60px;
     opacity: 0.12;
-  }
-  .ink-mist {
-    width: 150px;
-    bottom: 10vh;
   }
 }
 
