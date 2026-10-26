@@ -99,12 +99,31 @@ h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.5px; color: 
 .secondary-link { font-size: 17px; font-style: italic; }
 .story p.submission-status { font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--orange); }
 
-.science-figure { background: #FAF7F1; border: 1px solid var(--line); border-radius: 0; padding: 22px; box-shadow: 6px 8px 0 #2C3E2D0a; }
+/* Research figures as Dunhuang mineral-pigment plates */
+.science-figure { --plate: #E7DABE; --plate-line: #8C7A5B; background: transparent; border: 0; padding: 0; box-shadow: 0 1px 0 #2C3E2D14, 0 14px 30px -18px #3A2E1A40; }
+.figure-panel { position: relative; background: var(--plate); padding: 34px 34px 46px; }
+.figure-panel::before {
+  content: ''; position: absolute; inset: 12px; pointer-events: none;
+  background:
+    linear-gradient(var(--plate-line), var(--plate-line)) left top / 34% 1px no-repeat,
+    linear-gradient(var(--plate-line), var(--plate-line)) left top / 1px 18% no-repeat,
+    linear-gradient(var(--plate-line), var(--plate-line)) right top / 34% 1px no-repeat,
+    linear-gradient(var(--plate-line), var(--plate-line)) right top / 1px 18% no-repeat,
+    linear-gradient(var(--plate-line), var(--plate-line)) left bottom / 34% 1px no-repeat,
+    linear-gradient(var(--plate-line), var(--plate-line)) left bottom / 1px 18% no-repeat,
+    linear-gradient(var(--plate-line), var(--plate-line)) right bottom / 34% 1px no-repeat,
+    linear-gradient(var(--plate-line), var(--plate-line)) right bottom / 1px 18% no-repeat;
+  opacity: .7;
+}
+.figure-panel::after { content: ''; position: absolute; left: 22%; right: 22%; bottom: 18px; height: 16px; background: url('/assets/img/dunhuang/cloud-band.svg') center / auto 100% repeat-x; opacity: .75; }
+.figure-title { display: flex; flex-direction: column; gap: 4px; margin-bottom: 22px; }
+.science-figure .figure-label { margin: 0; font-size: 11.5px; letter-spacing: 2.4px; color: #7A6B52; }
 .science-figure a { display: block; }
-.science-figure img { filter: none; mix-blend-mode: multiply; border-radius: 0; background: transparent; }
-.figure-label { color: var(--muted); }
-.science-figure figcaption { font-size: 16.5px; color: var(--muted); }
-.science-figure figcaption span { font-style: italic; color: var(--cyan); font-size: 15px; }
+.science-figure img { filter: none; mix-blend-mode: normal; border-radius: 0; background: transparent; }
+.figure-note { margin: 18px 0 0; font-size: 16px; line-height: 1.6; color: #5E5443; font-style: italic; }
+.science-figure figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 20px; margin: 0; padding: 20px 26px 22px; background: #F6F1E7; }
+.science-figure figcaption .figure-no { font-family: var(--serif); font-size: 22px; letter-spacing: .08em; color: var(--ink); display: inline; margin: 0; }
+.science-figure figcaption .figure-cite { font-family: var(--serif); font-size: 17px; letter-spacing: .06em; color: #6F6555; display: inline; margin: 0 0 0 auto; text-align: right; }
 
 /* Papers */
 .paper-row { border-bottom-color: var(--line); }
@@ -154,8 +173,8 @@ nav a[aria-current=page] { color: var(--orange); }
 
 /* Ink edges: frames drawn with a wavering brush line */
 .ink-defs { position: absolute; width: 0; height: 0; }
-.observatory, .science-figure, .featured-software, .software-card { position: relative; overflow: visible; border-color: transparent; }
-.observatory::after, .science-figure::after, .featured-software::after, .software-card::after {
+.observatory, .featured-software, .software-card { position: relative; overflow: visible; border-color: transparent; }
+.observatory::after, .featured-software::after, .software-card::after {
   content: ''; position: absolute; inset: -1px; pointer-events: none;
   border: 1.6px solid var(--ink); opacity: .6; filter: url(#ink-edge);
 }
@@ -188,4 +207,7 @@ footer { background: url('/assets/img/brush-rule.svg') left top / 100% 7px no-re
   .eyebrow, .chapter, .instrument-top, .figure-label, .research-index, .unit { font-size: 12.5px; }
   img.footer-seal { width: 46px; order: 4; margin-left: auto; }
   .ink-bleed { opacity: .12; left: -60px; }
+  .figure-panel { padding: 26px 22px 40px; }
+  .science-figure figcaption { padding: 16px 20px; }
+  .science-figure figcaption .figure-no { font-size: 19px; }
 }
